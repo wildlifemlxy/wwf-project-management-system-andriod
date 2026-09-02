@@ -10,7 +10,7 @@ import com.wwf.projectmanagement.ui.theme.WwfTheme
 
 /**
  * AppCompatActivity gives us the XML/Views world (fragments, Material components,
- * okAppCompat theming back to API 24) while setContent hosts Jetpack Compose.
+ * AppCompat theming back to API 24) while setContent hosts Jetpack Compose.
  */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
