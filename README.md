@@ -10,12 +10,12 @@ Android app for tracking WWF conservation projects, tasks and milestones.
 - Adaptive theming: light/dark follows the system on every API level
 
 ## Stack
-- Kotlin 2.2, AGP 8.13, Gradle 8.14
+- Kotlin 2.2 (built into AGP 9), AGP 9.2, Gradle 9.4
 - **Jetpack Compose (Material 3)** for new UI
 - **XML Views + ViewBinding** (AppCompat / Material Components) where needed – XML layouts are embedded in Compose via `AndroidViewBinding` (see `ui/HomeScreen.kt` + `res/layout/view_info_card.xml`)
 
 ## Build
-Requires JDK 17–24 (Gradle 8.14 does not yet run on JDK 25).
+Works with Android Studio 2026.1+ and its bundled JDK (Java 25); command line needs JDK 17+.
 
 ```sh
 ./gradlew assembleDebug          # debug APK
@@ -24,3 +24,9 @@ Requires JDK 17–24 (Gradle 8.14 does not yet run on JDK 25).
 ./gradlew lintDebug              # lint
 ./gradlew bundleRelease          # Play Store AAB (per-ABI/density/language splits enabled)
 ```
+
+## Running in Android Studio
+1. **File → Open** the project root (the folder with `settings.gradle.kts`) and let Gradle sync finish.
+2. Pick the **`app`** run configuration and a device/emulator (e.g. *Medium Phone API 36*), then press ▶.
+
+If Studio shows *Add Configuration…*, it means Gradle sync hasn't completed — use **File → Sync Project with Gradle Files**.
