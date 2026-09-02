@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude sensitive or device-specific data from legacy (API < 31) backups here. -->
+</full-backup-content>

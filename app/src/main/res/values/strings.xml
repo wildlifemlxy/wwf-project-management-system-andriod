@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WWF Project Management</string>
+    <string name="welcome_title">Welcome to WWF Project Management</string>
+    <string name="welcome_body">Track conservation projects, tasks and milestones from any device.</string>
+    <string name="xml_section_title">Classic View section</string>
+    <string name="xml_section_body">This card is an XML layout hosted inside Compose via AndroidViewBinding.</string>
+    <string name="compose_section_title">Compose section</string>
+    <string name="counter_label">You have tapped %1$d times</string>
+    <string name="tap_me">Tap me</string>
+    <string name="device_info">Running Android %1$s (API %2$d)</string>
+</resources>

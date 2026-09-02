@@ -1,0 +1,7 @@
+<resources>
+    <color name="wwf_green">#FF0A8F4E</color>
+    <color name="wwf_green_dark">#FF05633A</color>
+    <color name="wwf_black">#FF000000</color>
+    <color name="wwf_white">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#FF0A8F4E</color>
+</resources>
