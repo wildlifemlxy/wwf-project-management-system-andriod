@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simple leaf glyph -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,24 C40,24 30,36 30,50 C30,64 40,76 54,84 C68,76 78,64 78,50 C78,36 68,24 54,24 Z M54,32 L54,78 M54,50 L66,42 M54,60 L42,52"
+        android:strokeColor="#FF05633A"
+        android:strokeWidth="3" />
+</vector>
