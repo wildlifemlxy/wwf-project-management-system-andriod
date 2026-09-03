@@ -1,46 +1,52 @@
 package com.wwf.projectmanagement.ui.theme
 
-import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-
-private val WwfGreen = Color(0xFF0A8F4E)
-private val WwfGreenDark = Color(0xFF05633A)
 
 private val LightColors = lightColorScheme(
-    primary = WwfGreen,
+    primary = PrimaryGreenDark,
     onPrimary = Color.White,
-    secondary = WwfGreenDark,
+    primaryContainer = PrimaryGreenLight,
+    onPrimaryContainer = ForestGreenDark,
+    secondary = PrimaryBlue,
+    onSecondary = Color.White,
+    tertiary = ForestGreen,
+    background = BgSecondary,
+    onBackground = TextPrimary,
+    surface = BgPrimary,
+    onSurface = TextPrimary,
+    surfaceVariant = HomeGradientMid,
+    onSurfaceVariant = TextSecondary,
+    outline = BorderLight,
 )
 
 private val DarkColors = darkColorScheme(
-    primary = Color(0xFF6FD99E),
-    onPrimary = Color.Black,
-    secondary = WwfGreen,
+    primary = PrimaryGreenLight,
+    onPrimary = ForestGreenDark,
+    primaryContainer = ForestGreen,
+    onPrimaryContainer = Color.White,
+    secondary = PrimaryBlue,
+    onSecondary = Color.Black,
+    tertiary = PrimaryGreen,
+    background = DarkBgMid,
+    onBackground = DarkTextPrimary,
+    surface = DarkSurface,
+    onSurface = DarkTextPrimary,
+    surfaceVariant = Color(0xFF1F2937),
+    onSurfaceVariant = DarkTextSecondary,
+    outline = Color(0xFF334155),
 )
 
 @Composable
 fun WwfTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Material You dynamic color on Android 12+, brand palette on older devices.
-    dynamicColor: Boolean = true,
     content: @Composable () -> Unit,
 ) {
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
-        darkTheme -> DarkColors
-        else -> LightColors
-    }
-
-    MaterialTheme(colorScheme = colorScheme, content = content)
+    // Fixed brand palette so the app matches the WWF Project Platform website on every device.
+    val colorScheme = if (darkTheme) DarkColors else LightColors
+    MaterialTheme(colorScheme = colorScheme, typography = WwfTypography, content = content)
 }

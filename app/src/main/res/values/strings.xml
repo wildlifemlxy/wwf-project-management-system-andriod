@@ -1,11 +1,102 @@
 <resources>
-    <string name="app_name">WWF Project Management</string>
-    <string name="welcome_title">Welcome to WWF Project Management</string>
-    <string name="welcome_body">Track conservation projects, tasks and milestones from any device.</string>
-    <string name="xml_section_title">Classic View section</string>
-    <string name="xml_section_body">This card is an XML layout hosted inside Compose via AndroidViewBinding.</string>
-    <string name="compose_section_title">Compose section</string>
-    <string name="counter_label">You have tapped %1$d times</string>
-    <string name="tap_me">Tap me</string>
-    <string name="device_info">Running Android %1$s (API %2$d)</string>
+    <string name="app_name">WWF Project Platform</string>
+
+    <!-- Home / hero -->
+    <string name="hero_badge">Conservation in Action</string>
+    <string name="hero_logo_description">WWF Logo</string>
+    <string name="hero_title">WWF Project Platform</string>
+    <string name="hero_subtitle">Empowering conservation through advanced data visualization and automated survey management. Explore our survey projects and help protect Singapore\'s biodiversity.</string>
+    <string name="link_privacy_policy">Privacy Policy</string>
+    <string name="link_terms_of_service">Terms of Service</string>
+    <string name="link_separator">|</string>
+    <string name="action_view_project">View %1$s</string>
+    <string name="action_go_to_page">Go to page %1$d</string>
+
+    <!-- Projects -->
+    <string name="project_shb_name">Straw Headed Bulbul</string>
+    <string name="project_shb_description">A wildlife monitoring initiative tracking Straw-Headed Bulbul populations through survey walks, event coordination, and photo documentation across Singapore\'s nature reserves and parks.</string>
+    <string name="project_rrr_name">Rifle Range Road Project</string>
+    <string name="project_rrr_description">A conservation survey workspace for observations, field events, and project activity at Rifle Range Road.</string>
+
+    <string name="action_login">Login</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_go_to_login">Go to Login</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="session_signed_in_as">Signed in as %1$s</string>
+
+    <!-- Login dialog -->
+    <string name="login_title">Sign in</string>
+    <string name="login_subtitle">Access your survey projects</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_show_password">Show password</string>
+    <string name="login_hide_password">Hide password</string>
+
+    <!-- Project page: gallery -->
+    <string name="gallery_title">Gallery</string>
+    <string name="gallery_subtitle">Explore conservation efforts and captured moments</string>
+    <string name="gallery_filter_all">All</string>
+    <string name="gallery_filter_photos">Photos</string>
+    <string name="gallery_filter_videos">Videos</string>
+    <string name="gallery_empty">No media is found in gallery</string>
+    <string name="gallery_close">Close</string>
+    <string name="gallery_loading">Loading gallery…</string>
+    <string name="gallery_error">Could not load media. Check your connection and try again.</string>
+    <string name="gallery_retry">Retry</string>
+    <string name="gallery_video">Video</string>
+
+    <string name="coming_soon">This section is not available yet.</string>
+
+    <!-- Session (local, single device) -->
+
+    <!-- Project page: hero -->
+    <string name="project_hero_title">WWF %1$s Survey Platform</string>
+    <string name="project_hero_subtitle">Empowering conservation through advanced data visualization and automated survey management. Join us in protecting Singapore\'s biodiversity and endangered wildlife.</string>
+    <string name="action_explore_dashboard">Explore Dashboard</string>
+    <string name="action_survey_event_management">Survey Event Management</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_coming_soon">Coming soon</string>
+
+    <!-- Project page: features -->
+    <string name="features_title">Comprehensive Conservation Tools</string>
+    <string name="features_subtitle">Everything you need to monitor, analyze, and protect the %1$s project</string>
+    <string name="feature_dashboard_title">Interactive Dashboard</string>
+    <string name="feature_dashboard_1">Advanced charts &amp; real-time analytics</string>
+    <string name="feature_dashboard_2">Interactive maps for spatial insights</string>
+    <string name="feature_dashboard_3">Comprehensive conservation reports</string>
+    <string name="action_view_dashboard">View Dashboard</string>
+    <string name="feature_survey_title">Survey System</string>
+    <string name="feature_survey_1">Centralized management of all survey events</string>
+    <string name="feature_survey_2">View past and upcoming events</string>
+    <string name="feature_survey_3">Add upcoming events and participants</string>
+    <string name="feature_survey_4">Live updates for upcoming events</string>
+    <string name="action_manage_surveys">Manage Surveys</string>
+    <string name="feature_telegram_title">Telegram Settings</string>
+    <string name="feature_telegram_1">Configure Telegram bot integration</string>
+    <string name="feature_telegram_2">Set up notifications and alerts</string>
+    <string name="feature_telegram_3">Manage Telegram access and permissions</string>
+    <string name="action_telegram_settings">Telegram Settings</string>
+
+    <!-- Project page: info + stats -->
+    <string name="stat_observations">Observations</string>
+    <string name="stat_locations">Locations</string>
+    <string name="stat_volunteers">Volunteers</string>
+    <string name="stat_years_active">Years Active</string>
+    <string name="stat_unavailable">—</string>
+    <string name="stat_loading">…</string>
+    <string name="info_detail">Our conservation platform combines citizen science with advanced technology to monitor populations, track behaviors, and coordinate protection efforts across Singapore\'s nature reserves and parks.</string>
+    <string name="info_detail_rrr">Our conservation platform combines citizen science with advanced technology to monitor biodiversity, coordinate field activities, and support evidence-based conservation work.</string>
+
+    <string name="shb_info_title">Protecting the Straw-headed Bulbul</string>
+    <string name="shb_info_description">The Straw-headed Bulbul (Pycnonotus zeylanicus) is a critically endangered songbird native to Southeast Asia. Once common across the region, habitat loss and illegal trapping have pushed this species to the brink of extinction.</string>
+    <string name="shb_painting_description">Feng Yun Traditional Chinese Painting – artistic representation of nature and wildlife conservation</string>
+    <string name="shb_caption_title">Art Inspiring Conservation</string>
+    <string name="shb_caption_credit">Credits: Feng Yun</string>
+    <string name="shb_caption_body">Capturing the delicate beauty of Singapore\'s endangered birds and inspiring deeper connection with nature through artistic expression</string>
+
+    <string name="rrr_info_title">Protecting Rifle Range Road</string>
+    <string name="rrr_info_description">Rifle Range Road is an important conservation area where field observations and coordinated survey work support the protection of Singapore\'s natural habitats.</string>
+    <string name="rrr_painting_description">Rifle Range Road forest canopy – representing the conservation area\'s natural habitat</string>
+    <string name="rrr_caption_title">Protecting Natural Habitats</string>
+    <string name="rrr_caption_body">Rifle Range Road\'s forest canopy, home to Singapore\'s biodiversity</string>
 </resources>
